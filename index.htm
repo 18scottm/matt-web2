@@ -2,16 +2,46 @@
 <html lang="en">
    <title>Matthew Scott Portfolio</title>
    <style>
+      #fav-header {
+	  background-color: #1E90FF;
+	  }
+      #game_bar {
+      font-family: Arial;
+      }
+      #side_bar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 175px;
+      background-color: #333;
+      position: fixed;
+      height: 1000px;
+      overflow: auto;
+      }
+      #side_bar li a {
+      display: block;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      }
+      #side_bar li a.active {
+      background-color: #9932CC;
+      color: white;
+      }
+      #side_bar li a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+      }
       #overviewHeader {
       font-family: Arial;
       color: white;
       }
-	  #webBanner {
-	  display: block;
+      #webBanner {
+      display: block;
       margin-left: auto;
       margin-right: auto;
-	  width: 96%;
-	  }
+      width: 96%;
+      }
       #homeIndex {
       background-color: #1E90FF;
       }
@@ -100,25 +130,42 @@
       color: white;
       }
       <head>
-         <link rel="shortcut icon" href="Media\favicon.png" alt="Favicon_Image">
+         <link rel="shortcut icon" href="media\favicon.png" alt="Favicon_Image">
       </head>
    </style>
    <body>
-	<div id ="webBanner">
-		<img src="media\banner.png" alt="Website_Banner">
-	</div>
-		 <nav>
-            <div id="tableOfContents">
-               <ul>
-                  <li id="homeIndex"><a href= "index.htm"><img src="Media\home-5-256.png" width="20" height="20" /></a></li>
-                  <li><a href= "classes.htm"> Courses</a>
-                  <li><a href= "avg-grades.htm"> Total GPA</a>
-                  <li><a href= "about.htm"> About Me</a>
-                  <li><a href= "personal.htm"> Personal Info</a>
-                  <li><a href= "videos.htm"> Favorite Videos</a>
-                  <li><a href= "other.htm"> Other</a>
-               </ul>
-            </div>
-         </nav>
 
-	</body>
+      <div id ="webBanner">
+         <img src="media\banner.png" alt="Website_Banner">
+      </div>
+      <nav>
+         <div id="tableOfContents">
+            <ul>
+               <li id="homeIndex"><a href= "index.htm"><img src="media\home-5-256.png" width="20" height="20" /></a></li>
+               <li><a href= "classes.htm"> Courses</a>
+               <li><a href= "avg-grades.htm"> Total GPA</a>
+               <li><a href= "about.htm"> About Me</a>
+               <li><a href= "personal.htm"> Personal Info</a>
+               <li><a href= "videos.htm"> Favorite Videos</a>
+               <li><a href= "other.htm"> Other</a>
+            </ul>
+         </div>
+	  </nav>
+	 </div>      
+	 <div id="side_bar">
+         <ul>
+            <div>
+			   <li><img src="media\favicon-large.png" width="175" height="175"></li>
+			   <li><h4 id="fav-header">Favorites</h4></li>
+               <li><a href="favorites\videos.htm">Favorite Videos</a></li>
+               <li><a href="favorites\foods.htm">Favorite Foods</a></li>
+               <li><a href="favorites\games.htm">Favorite Games</a></li>
+               <li><a href="favorites\movies.htm">Favorite Movies</a></li>
+               <li><a href="favorites\hobbbies.htm">Favorite Hobbies</a></li>
+            </div>
+         </ul>
+      </div>
+	 <div id ="main">
+		<h1 id="pageHeader">Matthew Scott Portfolio</h1>
+	 </div>
+   </body>
