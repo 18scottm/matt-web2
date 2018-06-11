@@ -1,166 +1,142 @@
-<!doctype html>
-<html>
+<html lang="en">
    <title>Matthew Scott Portfolio</title>
-   <head></head>
    <style>
-      body {
-      background-color: #4d4d4d;
+	  #grade-9, #grade-10, #grade-11, #grade-12 {
+	  font-family: Arial;
+      color: white;
+	  }
+      #overviewHeader {
+      font-family: Arial;
+      color: white;
       }
-      h1, h2, h3, h4, h5, h6 {
+      #webBanner {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 96%;
+      }
+      #homeIndex {
+      background-color: #1E90FF;
+      }
+      #p_cInfo {
+      font-family: Arial;
+      color: white;
+      }
+      #cInformation {
+      border: 1.5px solid black;
+      padding: 1em;
       background-color: #333;
-      font-family: Arial;
-      color: white;
+      }
+      #pInformation {
+      border: 1.5px solid black;
+      padding: 1em;
+      background-color: #333;
+      }
+      #reflection {
+      border: 1.5px solid black;
       padding: 0.5em;
-      font-weight: bold;
-      }
-      /* width */
-      ::-webkit-scrollbar {
-      width: 3px;
-      }
-      /* Track */
-      ::-webkit-scrollbar-track {
-      background: #696969;
-      }
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-      background: #1E90FF; 
-      }
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-      background: #0000CD
-      }
-      #main-text {
-      background-color: #444;
+      background-color: #333;
       color: white;
       }
-      #main {
-      padding: 1.5em;
-      background-color: #444;
-      color: white;
-	  float: right;
-      }
-      #main li {
+      #overview {
       font-family: Arial;
-      }
-      #main-header {
-      background-color: #444;
+      color: white;
       }
       #moduleHeader { 
-      background-color: yellow;
+      background-color: #008000;
       font-family: Arial
       }
       #pageHeader {
       color: white;
       font-weight: bold;
       background: #333;
-      padding: 1em;
+      padding: 0.5em;
       text-align: center;
       }
-      #banner {
-      bottom: 0;
-      right: 550px;
-      height: 744px
-      }
-      #nav_bar ul {
+      nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
       background-color: #333;
-      top: 10;
+      top: 0;
+      position: sticky;
+      font-size: 18px;
       }
-      #nav_bar {
-      font-family: Arial;
-      margin: 0 auto;
-      min-width: 360px;
-	  position: fixed;
-	  float: right;
-      }
-      #nav_bar li {
+      nav li {
       float: left;
+      font-family: Arial;
+      font-size: 18px;
       }
-      #nav_bar li a {
+      nav li a {
       display: block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      font-size: 18px;
+      padding: 15px 30px;
       text-decoration: none;
       }
-      #nav_bar li a:hover {
+      nav li a:hover {
       background-color: #111;
       }
-      #nav_bar .active {
-      background-color: #1E90FF;
+      body {
+      background-color: #4d4d4d;
       }
-      #side_bar {
-      font-family: Arial;
-	  position: fixed;
-      }
-      #side_bar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 175px;
+      h, h1, h2, h4, h5 {
       background-color: #333;
-      height: 1000px;
-      overflow: auto;
-      }
-      #side_bar li a {
-      display: block;
-      color: white;
-      padding: 8px 16px;
-      text-decoration: none;
-      }
-      #side_bar li a.active {
-      background-color: #1E90FF;
+      font-family: Arial;
+      padding: 0.5em;
       color: white;
       }
-      #side_bar li a:hover:not(.active) {
-      background-color: #555;
+      h3 {
+      background-color: #333;
+      font-family: Arial;
+      padding: 0.5em;
+      font-weight: bold;
+      }
+      p, p1, p2, p3, p4, p5 {
+      font-family: Arial;
+      background-color: #333
+      }
+      div li {
+      font-family: Arial;
       color: white;
       }
+	  table, th {
+	  border: 1px solid black;
+	  border-collapse: collapse;
+	  font-family: Arial;
+ 	  padding: 0.5em;
+	  background-color:  #404040;
+      }
+      td {
+	  border: 1px solid black;
+	  border-collapse: collapse;
+	  font-family: Arial;
+	  padding: 0.5em;
+	  background-color:  #404040;
+	  color: white;
+      }
+      <head>
+         <link rel="shortcut icon" href="Media\favicon.png" alt="Favicon_Image">
+      </head>
    </style>
-  <body>
-   <div id="nav_bar">
-      <div style="margin-left:160px;padding:1px 16px;height:-1000px">
-         <img src="media\banner.png" width="" height="" alt="banner.png">
-            <ul>
-               <li><a class="active" href="index.htm"><img src="media\home-5-256.png" width="20" height="20" alt="home-5-256.png"></a></li>
-               <li><a href="classes.htm">Courses</a></li>
-               <li><a href="avg-grades.htm">Total GPA</a></li>
-               <li><a href="about.htm">About Me</a></li>
-               <li><a href="personal.htm">Personal Info</a></li>
-               <li><a href="other.htm">Other</a></li>
-            </ul>
-         </div>
-         <div id="main">
-            <h3 id="main-header"> Version 1.0 : Release Date : 5/16/18</h3>
-            <h4 id="main-text">Features</h4>
-            <ul>
-               <li>Fixed Margin Issues</li>
-               <li>Added Navigation Tabs</li>
-               <li>Games Added (Not All)</li>
-            </ul>
-         </div>
+   <body>
+      <div id ="webBanner">
+         <img src="media\banner.png" alt="Website_Banner">
       </div>
- 
-      <div id ="side_bar">
-         <div>
+      <nav>
+         <div id="tableOfContents">
             <ul>
-               <div>
-                  <li><img src="media\favicon-large.png" width="175" height="175"></li>
-                  <li>
-                     <h4 id="sidebar-head">Favorites</h4>
-                  </li>
-                  <li><a href="favorites\animals.htm">Favortite Videos</a></li>
-                  <li><a href="favorites\animals.htm">Favortite Games</a></li>
-                  <li><a href="favorites\animals.htm">Favorite Hobbies</a></li>
-                  <li><a href="favorites\animals.htm">Favorite Foods</a></li>
-                  <li><a href="favorites\animals.htm">Favorite Animals</a></li>
-               </div>
+               <li id="homeIndex"><a href= "index.htm"><img src="Media\home-5-256.png" width="20" height="20" /></a></li>
+               <li><a href= "classes.htm"> Courses</a>
+               <li><a href= "avg-grades.htm"> Total GPA</a>
+               <li><a href= "about.htm"> About Me</a>
+               <li><a href= "personal.htm"> Personal Info</a>
+               <li><a href= "videos.htm"> Videos</a>
+               <li><a href= "other.htm"> Other</a>
             </ul>
          </div>
-      </div>         
-
-   </body>
-</html>
+      </nav>
+	<div>
+	  <h1 id="pageHeader">Matthew Scott - School Portfolio</h1>
