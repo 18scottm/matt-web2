@@ -1,10 +1,21 @@
 <html lang="en">
    <title>Matthew Scott Portfolio</title>
    <style>
-	  #grade-9, #grade-10, #grade-11, #grade-12 {
-	  font-family: Arial;
+      .spoilerbutton {display:block; border:none; padding: 0px 0px; margin:10px 0px; font-size:150%; font-weight: bold; color:#000000; background-color:transparent; outline:0; 
+      }
+      .spoiler {overflow:hidden;}
+      .spoiler > div {-webkit-transition: all 0s ease;-moz-transition: margin 0s ease;-o-transition: all 0s ease;transition: margin 0s ease;}
+      .spoilerbutton[value="Show Solution"] + .spoiler > div {margin-top:-500%;}
+      .spoilerbutton[value="Hide SolutionSolution"] + .spoiler {padding:5px;} 
+      #grade-9, #grade-10, #grade-11, #grade-12 {
+      font-family: Arial;
       color: white;
-	  }
+      }
+      #listOf {
+      color: white;
+      background: #333;
+      padding: 1em;
+      }
       #overviewHeader {
       font-family: Arial;
       color: white;
@@ -82,7 +93,7 @@
       body {
       background-color: #4d4d4d;
       }
-      h, h1, h2, h4, h5 {
+      h, h1, h2, h3, h4, h5 {
       background-color: #333;
       font-family: Arial;
       padding: 0.5em;
@@ -102,23 +113,23 @@
       font-family: Arial;
       color: white;
       }
-	  table, th {
-	  border: 1px solid black;
-	  border-collapse: collapse;
-	  font-family: Arial;
- 	  padding: 0.5em;
-	  background-color:  #404040;
+      table, th {
+      border: 1px solid black;
+      border-collapse: collapse;
+      font-family: Arial;
+      padding: 0.5em;
+      background-color:  #404040;
       }
       td {
-	  border: 1px solid black;
-	  border-collapse: collapse;
-	  font-family: Arial;
-	  padding: 0.5em;
-	  background-color:  #404040;
-	  color: white;
+      border: 1px solid black;
+      border-collapse: collapse;
+      font-family: Arial;
+      padding: 0.5em;
+      background-color:  #404040;
+      color: white;
       }
       <head>
-         <link rel="shortcut icon" href="Media\favicon.png" alt="Favicon_Image">
+         <link rel="shortcut icon" href="media\favicon.png" alt="Favicon_Image">
       </head>
    </style>
    <body>
@@ -130,7 +141,7 @@
             <ul>
                <li id="homeIndex"><a href= "index.htm"><img src="Media\home-5-256.png" width="20" height="20" /></a></li>
                <li><a href= "classes.htm"> Courses</a>
-               <li><a href= "avg-grades.htm"> Total GPA</a>
+               <li><a href= "avg-grades.htm"> Average Grades / GPA</a>
                <li><a href= "about.htm"> About Me</a>
                <li><a href= "personal.htm"> Personal Info</a>
                <li><a href= "videos.htm"> Videos</a>
@@ -138,5 +149,21 @@
             </ul>
          </div>
       </nav>
-	<div>
-	  <h1 id="pageHeader">Matthew Scott - School Portfolio</h1>
+      <div>
+      <h1 id="pageHeader">Matthew Scott - School Portfolio</h1>
+      <h2 id="subHeader">Information About this Site</h2>
+      <h4 id="infoHeader">Hello, My name is Matthew Scott. I’ve been to many different schools besides Bordentown Regional. I moved from Harmony, NJ and went to school called Belvidere High School, which was a school kind of like Bordentown but a little smaller and less diverse. The reason why I made this portfolio is that because, In the future, I’ll be able to see what classes I’ve taken without having to take out my transcripts. This isn’t the end of my education because I’m going to a college called RCBC, most of my friends are going there. </h4>
+      <h4 id="infoHeader2">There’s a lot of things on this website, so there’s some instruction listed in numbers below. This website shouldn’t be so hard to use. All you really need to know is how to use a keyboard, mouse, and a computer. There’s nothing really too complicated. So just click the dropdown below this message.</h4>
+      <input class="spoilerbutton" type="button" value="Show Solution" onclick="this.value=this.value=='Show Solution'?'Hide Solution':'Show Solution';">
+      <div class="spoiler">
+         <div>
+            <p id="listOf">
+               1. Includes GPA / Completed Courses<br />
+               2. Lists Websites and Videos I've used for studying<br />
+               3. Contains Personal Information, like where I was born, etc.<br />
+               4. The About Me Tab contains information about my hobbies and what not.<br />
+               5. Has extra information of what school I'm going to next.<br />
+            </p>
+            <img style=" margin: 30px auto; display: block;" height="Auto" width = "Auto" src="IMAGE URL">
+         </div>
+      </div>
