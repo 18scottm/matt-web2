@@ -154,16 +154,15 @@
       <h2 id="subHeader">Information About this Site</h2>
       <h4 id="infoHeader">Hello, My name is Matthew Scott. I’ve been to many different schools besides Bordentown Regional. I moved from Harmony, NJ and went to school called Belvidere High School, which was a school kind of like Bordentown but a little smaller and less diverse. The reason why I made this portfolio is that because, In the future, I’ll be able to see what classes I’ve taken without having to take out my transcripts. This isn’t the end of my education because I’m going to a college called RCBC, most of my friends are going there. </h4>
       <h4 id="infoHeader2">There’s a lot of things on this website, so there’s some instruction listed in numbers below. This website shouldn’t be so hard to use. All you really need to know is how to use a keyboard, mouse, and a computer. There’s nothing really too complicated. So just click the dropdown below this message.</h4>
-      <input class="spoilerbutton" type="button" value="Show Solution" onclick="this.value=this.value=='Show Solution'?'Hide Solution':'Show Solution';">
-      <div class="spoiler">
-         <div>
-            <p id="listOf">
+<div id="spoiler" style="display:none"> 
+<p id="listOf">
                1. Includes GPA / Completed Courses<br />
                2. Lists Websites and Videos I've used for studying<br />
                3. Contains Personal Information, like where I was born, etc.<br />
                4. The About Me Tab contains information about my hobbies and what not.<br />
                5. Has extra information of what school I'm going to next.<br />
-            </p>
-            <img style=" margin: 30px auto; display: block;" height="Auto" width = "Auto" src="IMAGE URL">
+            </p> 
+</div> 
+<button title="Click to show/hide content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Spoiler</button>
          </div>
       </div>
